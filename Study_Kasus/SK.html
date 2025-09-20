@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 6 Smoke</title>
+    <link rel="stylesheet" href="SK.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content-box">
+                <h1>Top 6 Smoke</h1>
+                <p>6 rokok terbaik menurut kami</p>
+            </div>
+            <div class="header-links">
+                <a href="#" onclick="openModal('Tentang Kami', 'Toko rokok online terpercaya yang menyediakan berbagai merek rokok pilihan dengan harga terbaik.', 'Hubungi kami untuk informasi lebih lanjut.')">Tentang Kami</a>
+                <a href="#" onclick="openModal('Hubungi Kami', 'Telepon: +62 857-7898-6545', 'Email: t6smoke@goolge.com')">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="product" onclick="openModal('Marlboro Filter Black', 'Rokok dengan filter berwarna hitam yang memberikan sensasi unik dan rasa yang kuat.', 'Harga: Rp 42.000,00')">
+                <img src="1. Marlong.jpg" alt="Marlboro Filter Black" class="product-img">
+                <h3>Marlboro Filter Black</h3>
+                <p class="description">Rokok dengan filter berwarna hitam yang memberikan sensasi unik dan rasa yang kuat.</p>
+                <p class="price">Rp 42.000,00</p>
+            </div>
+            <div class="product" onclick="openModal('Sampoerna Mild', 'Rokok kretek mesin yang populer dengan rasa ringan dan kadar tar serta nikotin yang rendah.', 'Harga: Rp 37.000,00')">
+                <img src="2. Sempurna_mild.jpeg" alt="Sampoerna Mild" class="product-img">
+                <h3>Sampoerna Mild</h3>
+                <p class="description">Rokok kretek mesin yang populer dengan rasa ringan dan kadar tar serta nikotin yang rendah.</p>
+                <p class="price">Rp 37.000,00</p>
+            </div>
+            <div class="product" onclick="openModal('Dunhill', 'Merek rokok internasional yang terkenal dengan kualitas tembakau premium dan rasa halus.', 'Harga: Rp 30.000,00')">
+                <img src="3. Dunhild.jpg" alt="Dunhill" class="product-img">
+                <h3>Dunhill</h3>
+                <p class="description">Merek rokok internasional yang terkenal dengan kualitas tembakau premium dan rasa halus.</p>
+                <p class="price">Rp 30.000,00</p>
+            </div>
+            <div class="product" onclick="openModal('Gudang Garam', 'Rokok kretek ikonik dari Indonesia dengan rasa cengkeh yang khas dan kuat.', 'Harga: Rp 25.000,00')">
+                <img src="4. Gudang_Garam.jpg" alt="Gudang Garam" class="product-img">
+                <h3>Gudang Garam</h3>
+                <p class="description">Rokok kretek ikonik dari Indonesia dengan rasa cengkeh yang khas dan kuat.</p>
+                <p class="price">Rp 25.000,00</p>
+            </div>
+            <div class="product" onclick="openModal('Marlboro Merah', 'Marlboro Merah adalah rokok jenis American Blend yang dikenal dengan rasa klasik kuat dan berani, serta sensasi asap yang nyata.', 'Harga: Rp 50.000')">
+                <img src="5. Marmer.jpg" alt="Marlboro Merah" class="product-img">
+                <h3>Marlboro Merah</h3>
+                <p class="description">Marlboro Merah adalah rokok jenis American Blend yang dikenal dengan rasa klasik kuat dan berani, serta sensasi asap yang nyata.</p>
+                <p class="price">Rp 50.000,00</p>
+            </div>
+            <div class="product" onclick="openModal('Cerutu', 'Gulungan utuh daun tembakau yang memberikan pengalaman merokok yang mewah dan berkelas.', 'Harga: Rp 180.000')">
+                <img src="6. Cerutu.jpeg" alt="Cerutu" class="product-img">
+                <h3>Cerutu</h3>
+                <p class="description">Gulungan utuh daun tembakau yang memberikan pengalaman merokok yang mewah dan berkelas.</p>
+                <p class="price">Rp 180.000,00</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <p id="modal-text1"></p>
+            <p id="modal-text2"></p>
+            <button class="close-btn" onclick="closeModal()">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, text1, text2) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-text1').innerText = text1;
+            document.getElementById('modal-text2').innerText = text2;
+            document.getElementById('modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
