@@ -1,0 +1,33 @@
+.foto-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 1 / 1; 
+}
+
+.foto-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.hover-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.foto-wrap:hover .hover-info {
+  opacity: 1;
+}
