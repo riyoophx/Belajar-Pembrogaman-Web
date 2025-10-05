@@ -1,0 +1,18 @@
+body {
+    background: url(img/King\ MU.jpg) no-repeat;
+    font-family: Georgia;
+}
+h1 {
+    background-color: black;
+    text-align: center;
+    color: gold;
+}
+h2 {
+    color: silver;
+    font-size: 20px;
+}
+p {
+    margin-left: 50px;
+    color: gold;
+    font-size: 24px;
+}

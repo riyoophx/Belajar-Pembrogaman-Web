@@ -1,0 +1,18 @@
+/* selector ID*/
+#atas {
+    background-color: brown;
+    color: paleturquoise;
+    font-size: 50px;
+    text-align: center;
+}
+/* selector TAG*/
+h1 {
+    color: black;
+}
+
+/* selector CLASS*/
+.isi {
+    font-family: arial;
+    font-size: 30px;
+    color: blue;
+}
