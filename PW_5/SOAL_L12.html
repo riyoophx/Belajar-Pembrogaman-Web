@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perulangan Nilai - Praktikum 5.12</title>
+    </head>
+    <body style="font-family: Arial; background-color: #f8f9fa; padding: 20px;">
+        <h2>Program Pengulangan Nilai</h2>
+            <label>Masukkan Angka: </label>
+            <input type="number" id="jumlah" placeholder="Contoh: 10">
+            <button onclick="ulang()">Tampilkan</button>
+            <div id="output"></div>
+        <script>
+            function ulang() {
+            let jumlah = parseInt(document.getElementById("jumlah").value);
+            let hasil = "";
+                if (isNaN(jumlah) || jumlah <= 0) {
+            document.getElementById("output").innerHTML = "Masukkan angka yang valid!";
+                return;
+            }
+            for (let i = 1; i <= jumlah; i++) {
+            hasil += `Pengulangan ke-${i} <br>`;
+            }
+            document.getElementById("output").innerHTML = hasil;
+            }
+        </script>
+    </body>
+</html>
