@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Input Data Mahasiswa</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="stylesheet" href="UTS.css">
+    </head>
+    <body>
+    <div class="container">
+    <div class="form-container">
+        <h2 class="text-xl font-bold mb-4">Input Data</h2>
+        <form id="formMahasiswa">
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama" required>
+            <label>NIM</label>
+            <input type="text" id="nim" required>
+            <label>Semester</label>
+            <input type="number" id="semester" min="1" max="14" required>
+            <label>Program Studi</label>
+            <select id="prodi" required>
+                <option value="">-- Pilih --</option>
+                <option value="TI">Teknik Informatika</option>
+                <option value="SI">Sistem Informasi</option>
+                <option value="DKV">Desain Komunikasi Visual</option>
+                <option value="BD">Bisnis Digital</option>
+            </select>
+        <label>Email</label>
+        <input type="email" id="email" required>
+        <button type="submit">Kirim Data</button>
+    </form>
+    <div class="note">
+        * Isi data mahasiswa dengan benar
+    </div>
+    </div>
+    <div class="info-container">
+        <h3 class="text-lg font-semibold mb-2">Informasi Pengiriman</h3>
+        <div class="info-box">
+            <p><strong>Apa yang terjadi saat Anda klik "Kirim Data"?</strong></p>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>Data ditampilkan di Console</li>
+                <li>Data disimpan di array</li>
+                <li>Jumlah data akan bertambah</li>
+                <li>Form akan kosong kembali</li>
+            </ul>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Table Mahasiswa</h3>
+        <table id="tabelMahasiswa">
+            <thead>
+                <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Info</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Rio Febrian S</td>
+                    <td>Prodi: TI <br> Semester: 3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Gholib</td>
+                    <td>Prodi: TI <br> Semester: 3</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</body>
+    <script src="UTS.js"></script>
+</html>
