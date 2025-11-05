@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran Mahasiswa</title>
+</head>
+<body>
+    <h2>Form Pendaftaran Mahasiswa</h2>
+
+    <form action="SOAL_4.php" method="get">
+        Nama Lengkap: <br>
+        <input type="text" name="nama_lengkap" required><br><br>
+
+        Tempat Lahir: <br>
+        <input type="text" name="tempat_lahir" required><br><br>
+
+        Tanggal Lahir: <br>
+        <input type="number" name="tanggal" placeholder="Tanggal" min="1" max="31" required>
+        <input type="number" name="bulan" placeholder="Bulan" min="1" max="12" required>
+        <input type="number" name="tahun" placeholder="Tahun" min="1980" max="2025" required><br><br>
+
+        Alamat Rumah: <br>
+        <textarea name="alamat_rumah" required></textarea><br><br>
+
+        Jenis Kelamin: <br>
+        <input type="radio" name="jenis_kelamin" value="Laki-Laki" required> Laki-Laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan<br><br>
+
+        Asal Sekolah: <br>
+        <input type="text" name="asal_sekolah" required><br><br>
+
+        Nilai UAN: <br>
+        <input type="text" name="nilai_uan" required><br><br>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>
